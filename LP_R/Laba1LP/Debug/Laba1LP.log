@@ -1,0 +1,22 @@
+﻿Сборка начата 19.02.2020 18:44:47.
+Уровень детализации журнала: Normal.     1>Проект "C:\Users\Vlad\LP\Laba1LP\Laba1LP.vcxproj" в узле 2 (целевые объекты Build).
+     1>InitializeBuildStatus:
+         Создание "Debug\Laba1LP.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /FAcs /Fa"Debug\\" /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt Laba1LP.cpp
+         Laba1LP.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Vlad\LP\Laba1LP\Debug\Laba1LP.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\Vlad\LP\Laba1LP\Debug\Laba1LP.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Vlad\LP\Laba1LP\Debug\Laba1LP.lib" /MACHINE:X86 Debug\cheker.obj
+         Debug\Find.obj
+         Debug\Laba1LP.obj
+         Laba1LP.vcxproj -> C:\Users\Vlad\LP\Laba1LP\Debug\Laba1LP.exe
+       FinalizeBuildStatus:
+         Файл "Debug\Laba1LP.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "Debug\Laba1LP.tlog\Laba1LP.lastbuildstate".
+     1>Сборка проекта "C:\Users\Vlad\LP\Laba1LP\Laba1LP.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:00.55

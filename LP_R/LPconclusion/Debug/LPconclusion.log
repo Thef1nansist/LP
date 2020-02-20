@@ -1,0 +1,22 @@
+﻿Сборка начата 19.02.2020 18:04:24.
+Уровень детализации журнала: Normal.     1>Проект "C:\Users\Vlad\LP\LPconclusion\LPconclusion.vcxproj" в узле 2 (целевые объекты Rebuild).
+     1>_PrepareForClean:
+         Файл "Debug\LPconclusion.tlog\LPconclusion.lastbuildstate" удаляется.
+       InitializeBuildStatus:
+         Создание "Debug\LPconclusion.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /FAcs /Fa"Debug\\" /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt LPconclusion.cpp
+         LPconclusion.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Vlad\LP\LPconclusion\Debug\LPconclusion.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\Vlad\LP\LPconclusion\Debug\LPconclusion.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Vlad\LP\LPconclusion\Debug\LPconclusion.lib" /MACHINE:X86 Debug\LPconclusion.obj
+         LPconclusion.vcxproj -> C:\Users\Vlad\LP\LPconclusion\Debug\LPconclusion.exe
+       FinalizeBuildStatus:
+         Файл "Debug\LPconclusion.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "Debug\LPconclusion.tlog\LPconclusion.lastbuildstate".
+     1>Сборка проекта "C:\Users\Vlad\LP\LPconclusion\LPconclusion.vcxproj" завершена (целевые объекты Rebuild).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:03.77

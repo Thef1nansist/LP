@@ -1,0 +1,7 @@
+﻿  Laba1LP.cpp
+C:\Users\Vlad\LP\Laba1LP\Laba1LP.cpp(86,10): warning C4477: "printf": в строке форматирования "%s" требуется аргумент типа "char *", но вариативный аргумент "1" имеет тип "int"
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+  All 128 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  Laba1LP.vcxproj -> C:\Users\Vlad\LP\Laba1LP\Release\Laba1LP.exe
