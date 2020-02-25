@@ -1,0 +1,51 @@
+body{
+background: url(https://c.pxhere.com/photos/94/41/way_highway_landscape_asphalt_autumn-684954.jpg!d)
+no-repeat;
+background-size: 100%;
+}
+.mapl{
+    position:  absolute;
+    width: 100px;
+    top: 200px;
+    margin-left:700px;
+    margin-top: 200px;
+    -webkit-animation:mapl 5s ;
+
+}
+@-webkit-keyframes mapl{
+0%{position:  absolute;
+    width: 100px;
+    top: 200px;
+    margin-left:700px;
+    margin-top: 200px; }
+25%{position:  absolute;
+    transform:rotateY(180deg);
+    width:150px;
+    top: 200px;
+    margin-left:500px;
+    margin-top: 210px;}
+40%{position:  absolute;
+    width:200px;
+    top: 220px;
+    margin-left:400px;
+    margin-top: 210px;}
+50%{ position:  absolute;
+    width:250px;
+    top: 250px;
+    margin-left:500px;
+    margin-top: 210px;
+}
+75%{ position:  absolute;
+    width:300px;
+    top: 350px;
+    margin-left:700px;
+    margin-top: 210px;
+}
+100%{
+    width:350px;
+    top: 380px;
+    margin-left:800px;
+    margin-top: 210px;
+}
+
+}

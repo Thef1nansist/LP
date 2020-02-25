@@ -1,0 +1,87 @@
+body{
+    background-color: rgb(248, 247, 247);
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: turquoise;
+    color:red;
+    text-align: center;
+    font-size: 25px;
+    margin-right: 400px;
+    padding:20px;
+}
+footer{
+    background: turquoise;
+    color:red;
+    text-align: center;
+    font-size: 25px;
+    margin-right: 400px;
+    padding:20px;
+   
+}
+/*aside{
+    padding-top: 0;
+    background-color: sandybrown;
+    margin-right:1100px;
+    padding-bottom:150px;
+    font-size: 20px;    
+}*/
+h4{
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-bottom: 3px;
+}
+h3{
+    margin-top: 0px;
+    margin-bottom: 3px;
+    text-align: center;;
+}
+section{
+    margin-left: 300px;
+    padding-top: -100px;
+}
+.col-right{
+    width: 33%;
+    float: right;
+}
+.col-left{
+    width: 20%;
+    background-color: sandybrown;
+    float: left;
+   height: 235px;
+}
+.leftimg {
+    width:260px;
+    height:150px;
+    float:left; 
+    margin: 4px 4px 0px 2px;
+   }
+   .rightimg{
+    width:290px;
+    height:180px;
+    display: block; 
+    margin-left: 70px;
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+    
+   }
+   h2{
+       margin-top: -10%;
+       text-align: center;
+   }
+   .text{
+       margin-left: 70px;
+       margin-right: 90px;
+   }
+   .text1{
+    margin-left: 90px;
+    margin-right: 90px;
+   }
+   .vid{
+       margin-bottom: 0%;
+       margin-top: 0%;
+       margin-left: 70px;
+       margin-right: 90px;
+
+   }

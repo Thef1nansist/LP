@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html>
+ 	<head>
+  	<link rel="stylesheet" href="css/main.css">
+	<title>First str</title>
+	</head>
+	<body>
+	<div class="text-center heading headin"><h1>Я,<a href="aboutpepa.html">Савченко Владислав Юрьевич</a>, изучаю <span class=" text-red ">HTML</span> и CSS</h1></div>
+	<div class="caption"><h2>Работа с HTML and CSS</h2></div>
+	</body>
+<html>

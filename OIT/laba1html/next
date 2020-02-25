@@ -1,0 +1,100 @@
+char* charr4(char* string, char* symbols)
+{
+	int q = 0;
+	for (int i = 0; i <= strlen(string) + 1; i++)
+	{
+		if (string[i] == '(')
+		{
+			i++;
+			do {
+				i++;
+			} while (string[i] != ')');
+			i++;
+		}
+		if (string[i] != '(')
+		{
+			symbols[q] = string[i];
+			q++;
+		}
+	}
+	return symbols;
+}
+
+char* charr3(char* string, char* symbols)
+{
+	int q = 0;
+	for (int i = 0; i <= strlen(string); i++)
+	{
+		if (string[i] == 'b')
+			i++;
+		if (string[i] != 'b')
+		{
+			symbols[q] = string[i];
+			symbols[q + 1] = string[i];
+			q += 2;
+		}
+	}
+	return symbols;
+}
+
+char* charr2(char* string, char* symbols)
+{
+	int q = 0;
+	for (int i = 0; i <= strlen(string); i++)
+	{
+		if (string[i] == '*')
+			i++;
+		if (string[i] != '*')
+		{
+			symbols[q] = string[i];
+			symbols[q + 1] = string[i];
+			q += 2;
+		}
+	}
+	return symbols;
+}
+
+char* charr1(char* string, char* symbols)
+{
+	int q = 0;
+	for (int i = 0; i <= strlen(string); i++)
+		if (string[i] == '*')
+		{
+			i++;
+			while (string[i] != '*')
+			{
+				symbols[q] = string[i];
+				i++;
+				q++;
+			}
+			break;
+		}
+	return symbols;
+}
+
+int main()
+{
+	setlocale(LC_ALL, "rus");
+	char* string = new char[14], * symbols = new char[6];
+	cout << "\n\n\t\t3 вариант\n\nВ строке есть два символа *. Получить все символы между первым и вторым символом *\n\nВведите строку:\n";
+	cin.getline(string, 14);
+	cout << "\nСимволы между""*"": " << charr1(string, symbols);
+
+
+	cout << "\n\n\t\t6 Вариант\n\nВ строке есть символы *. Преобразовать строку следующим образом: удалить все символы *, и повторить каждый символ, отличный от *\n\nВведите строку:\n";
+	char* str = new char[17], * symbols2 = new char[20];
+	cin.getline(str, 17);
+	cout << "Измененная строка: " << charr2(str, symbols2);
+
+
+	char* string2 = new char[10], * symbols3 = new char[10];
+	cout << "\n\n\t\t4 Вариант\n\nНаписать программу, которая удаляет в строке все буквы b в тексте, написанном латинскими буквами\n\nВведите строку:\n";
+	cin.getline(string2, 10);
+	cout << "\nИзмененная строка: " << charr3(string2, symbols3);
+
+
+	char* string4 = new char[15], * symbols4 = new char[15];
+	cout << "\n\n\t\t5 Вариант\n\nИсключить из строки группы символов, расположенные между скобками вместе со скобками. Предполагается, что нет вложенных скобок\n\nВведите строку:\n";
+	cin.getline(string4, 10);
+	cout << "\nИзмененная строка: " << charr4(string4, symbols4);
+}

@@ -1,0 +1,66 @@
+body{
+    background-image: url(https://images.pexels.com/photos/414102/pexels-photo-414102.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size:  100%;
+    background-repeat: no-repeat;  
+}
+.spis *{
+padding: 0;
+margin: 0;
+}
+.spis ul,
+.spis ol{
+    list-style:none;
+}
+.spis >ul{
+    display:flex;
+    justify-content:center;
+}
+.spis>ul li a{
+    display: block;
+        background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+       background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+    padding: 15px 30px 15px 40px;
+    font-size: 15px;
+    color: #454545;
+    text-decoration: none;
+    text-transform:uppercase;
+    transition: all 0.3s ease;
+    border: 1px;
+}
+.spis >ul li{
+    position: relative;
+    border-right: 1 px solid #c7c8c9;
+}
+.spis ul li:first-child{
+    border-left:1px solid #b2b3b5;
+}
+.spis ul li:last-child{
+    border-right:1px solid #b2b3b5;   
+}
+.spis li a:hover{
+    color: rgb(218,67,67);
+    box-shadow: 1px 5 px 10 px -5px black;
+    transition:all 0.3s ease;
+}
+table{
+    padding: 15px 30px 15px 40px;
+    font-size: 15px;
+    color: #454545;
+    text-decoration: none;
+    text-transform:uppercase;
+    transition: all 0.3s ease;
+    border: 1px;
+}
+
+table td a:hover{
+    color: rgb(218,67,67);
+    box-shadow: 1px 5 px 10 px -5px black;
+    transition:all 0.3s ease;
+}
+table tr td {
+    border: 2px solid red ;
+    position: relative;
+    justify-content:center;
+}

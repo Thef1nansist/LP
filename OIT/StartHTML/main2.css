@@ -1,0 +1,46 @@
+table{
+    table-layout:auto;
+    padding:15px;
+    position:relative;
+    color:white;
+    height:1000px;
+    width:1000px;
+    padding-color:gray;
+    }
+    
+    .td {
+    background-color:black;
+    padding-color:gray;
+    padding:5px;
+    border:3px;
+    border-color:black;
+    height:100px;
+    width:100px;
+    }
+    .tdborderup {
+    background-color:green;
+    padding:5px;
+    height:10px;
+    width:100px;
+    padding-color:gray;
+    border:3px;
+    border-color:black;
+    }
+    .tdborderside {
+    background-color:green;
+    padding:5px;
+    height:100px;
+    width:10px;
+    padding-color:gray;
+    border:3px;
+    border-color:black;
+    }
+    .tdbordercorner {
+    background-color:green;
+    padding:5px;
+    height:10px;
+    width:10px;
+    padding-color:gray;
+    border:3px;
+    border-color:black;
+    }
