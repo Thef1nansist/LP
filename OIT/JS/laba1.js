@@ -148,3 +148,6 @@ function Catch(){
         document.getElementById('LastTask').innerHTML = 'Theres a error in code!';
     }
 }
+//Лаба5
+var all = document.getElementsByTagName('all');
+console.log(all.tagName);

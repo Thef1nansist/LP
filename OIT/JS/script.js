@@ -10,26 +10,26 @@ function task1() {
 
 		this.add_stud = function add(k) {
 			this.amount += k;
-			console.log('%c[added ' + k + ' students]' + '%c students ' + this.amount, 'color:green;', 'color:black;');
+			console.log('%c[Добавлено ' + k + ' студентов]' + '%c студентов ' + this.amount, 'color:green;', 'color:black;');
 		}
 
 		this.sub_stud = function sub(k) {
 			this.amount -= k;
-			console.log('%c[expelled ' + k + ' students]' + '%c students ' + this.amount, 'color:red;', 'color:black;');
+			console.log('%c[На тот свет ' + k + ' Студентов]' + '%c Студентов ' + this.amount, 'color:red;', 'color:black;');
 		}
 	}
 
 	let groups = [new Group(4, 'ПОИТ', 28), new Group(5, 'ПОИТ', 29), new Group(6, 'ПОИТ', 30), new Group(7, 'Не ПОИТ', 16)]
 
 	groups.forEach(g => {
-		console.log('Group ' + g.n + ': students ' + g.amount);
+		console.log('Группа ' + g.n + ': студентов ' + g.amount);
 		g.add_stud(Math.floor(getRand(g.amount) / 4));
 		g.sub_stud(getRand(g.amount));
 		document.write('Группа №' + g.n + ', кол-во студентов: ' + g.amount + '<br>');
 		console.log('Type of Group is ' + typeof(g));
-		console.log('Properties:');
+		console.log('Свойства:');
 		for (property in g) {
-			console.log('Type of ' + property + ' is ' + typeof(g[property]));
+			console.log('Тип ' + property + ' это ' + typeof(g[property]));
 		}
 	});
 
@@ -50,45 +50,45 @@ function task2() {
 		this.health = 100;
 
 		this.getMoney = () => {
-			console.log('[' + this.name + ' is begging for money]');
+			console.log('[' + this.name + 'Нужны деньги!]');
 			let gain = getRand(MAX_GAIN);
 			this.money += gain;
-			console.log('[' + this.name + ' earned] ' + gain + ' rub');
+			console.log('[' + this.name + ' получил] ' + gain + ' lol');
 			if (gain === 0)
-				this.say('Vot nevezuha');
+				this.say('Не повезло');
 			else if (gain < COST)
-				this.say('Chert, na buhlo ne hvatit!');
+				this.say('Не смогу купить книгу');
 			else if (gain >= COST && gain < Math.floor(MAX_GAIN / 2))
-				this.say('Norm, poidu buhnu');
+				this.say('Могу купить книгу');
 			else if (gain >= Math.floor(MAX_GAIN / 2) && gain < MAX_GAIN)
-				this.say('Podnyal babla');
+				this.say('Получил деньги');
 			else if (gain === MAX_GAIN)
-				this.say('Elki-palki, da ya bogat!');
+				this.say('Ура,премия');
 
 			this.getDrunk();
 		}
 
 		this.getStatus = () => {
-			console.log(`[boozer status] Name: ${this.name}, Second name: ${this.nickname}, Age: ${this.age}, Money: ${this.money}, Health: ${this.health}%`);
+			console.log(`[status] Имя: ${this.name}, Фамилия: ${this.nickname}, Возраст: ${this.age}, Деньги: ${this.money}, Здоровье: ${this.health}%`);
 		}
 		this.say = (msg) => {
-			console.log('[' + this.name + ' says] ' + msg);
+			console.log('[' + this.name + ' сказал] ' + msg);
 		}
 
 		this.sayHi = () => {
-			this.say(`${this.greeting} ya ${this.name} ${this.nickname}, ${d.getFullYear() - this.age} goda rozhdeniya`)
+			this.say(`${this.greeting} я ${this.name} ${this.nickname}, ${d.getFullYear() - this.age} года рождения`)
 		}
 
 		this.getDrunk = () => {
 			if (this.money >= COST) {
-				console.log('[' + this.name + ' drinks] ');
+				console.log('[' + this.name + ' книги] ');
 				this.money -= COST;
 				this.health -= getRand(COST);
-				this.say('Vot eto zhituha v nature');
+				this.say('Мне нравиться');
 				this.getStatus();
 			} else {
-				console.log('[' + this.name + ' is upset] ');
-				this.say('Nado eshe babla');
+				console.log('[' + this.name + ' эта приключение] ');
+				this.say('Нужны ещё деньги');
 				this.getMoney();
 			}
 
@@ -96,39 +96,32 @@ function task2() {
 	}
 
 	let animals = [
-		new Boozer('Vasya', 'Smeliy', 42, 'Zdarova, bandit,'),
-		new Boozer('Inokentiy', 'Pavlovich', 69, 'Dobriy vecher,'),
-		new Boozer('Serega', 'Shpon', 28, 'Che-kavo,')
+		new Boozer('Иван', 'Иванов', 42, 'Здравствуйте, господа,'),
+		new Boozer('Владислав', 'Юрьевич', 69, 'Добрый день,'),
+		new Boozer('Сергеев', 'Шарик', 28, 'Приветики')
 	];
 
-	Boozer.prototype.job = 'unemployed';
+	Boozer.prototype.job = 'Не будет денег';
 	animals.forEach(person => {
 		person.sayHi();
 		person.getMoney();
-		console.log('[' + person.name + '\'s job] ' + person.job);
+		console.log('[' + person.name + '\'s Работа] ' + person.job);
 	});
 
 	Boozer.prototype.checkIn = function(property) {
-		console.log('Check if ' + this.name + ' has ' + property + ':', (property.toString() in this) ? 'yes' : 'no');
+		console.log('Проверить если ' + this.name + ' has ' + property + ':', (property.toString() in this) ? 'yes' : 'no');
 	}
 
-	animals[0].checkIn('job');
-	animals[0].checkIn('future');
+	animals[0].checkIn('Работа');
+	animals[0].checkIn('Будущее');
 
-	// animals.forEach((p) => {
-	// 	console.log('Type of Boozer is ' + typeof(p));
-	// 	console.log('Properties:');
-	// 	for (property in p) {
-	// 		console.log('Type of ' + property + ' is ' + typeof(p[property]));
-	// 	}
-	// })
 }
 
 function task3() {
 	function displayArr(array) {
-		console.log('Array:');
+		console.log('Массив:');
 		array.forEach((el, i) => console.log(i + ': ' + el));
-		console.log('Length: ' + array.length);
+		console.log('Длинна: ' + array.length);
 	}
 
 	let expressions = new Array();
@@ -153,5 +146,5 @@ function task3() {
 		return 5;
 	}
 
-	console.log(typeof(return5), typeof(return5()));
+	console.log(typeof(return5),typeof(return5()));
 }

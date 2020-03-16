@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SevenLabs </title>
+    <script src="laba7js.js" defer> </script>
+</head>
+<body>
+    <form onsubmit="getvalue(this)">
+        
+            <legend> Факультет информационных технологий </legend>
+            <br/><input type="text" name='name' id="lol" placeholder="Имя"/><br/>
+            <br/><input type="text" name='lastname' placeholder="Фамилия"/><br/>
+
+        <p>Специальность <select name="hero">
+                
+                <option value="ИСИТ">ИСИТ</option>
+                <option value="ПОИТ" selected>ПОИТ</option>
+                <option value="ПОИБМС">ПОИБМС</option>
+                <option value="ДЭиВИ" >ДЭиВИ</option>
+
+        </select> 
+        </p>
+        <P>
+         Курс: <br>
+         <label name="cheker">
+            <input type="radio"  value="1" />1
+            <input type="radio" value="2" />2 
+            <input type="radio" value="3" />3
+            <input type="radio" value="4" />4
+        </label>
+        </P>
+        <P>Предметы:<br>
+            <input type="checkbox" value="ОИТ" />ОИТ
+            <input type="checkbox" value="ОАИП" />ОАИП
+            <input type="checkbox" value="Физика" />Физика
+            <input type="checkbox" value="Математика" />Математика
+            <input type="checkbox" value="История" />История
+        </P>
+        <input type="submit" value="submit"/>
+        <input type="submit" value="Result"/> <br><br>
+
+        <input type="submit" name="submit" value="Напечатать"/>
+    </form>
+</body>
+</html>
