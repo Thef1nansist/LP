@@ -1,0 +1,39 @@
+<!Doctype HTML>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>9_4</title>
+		<style>
+			body {
+				background-color: #eee;
+				margin: 0;
+			}
+
+			canvas {
+				background-color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<canvas width="300px" height="300px"></canvas>
+		<form>
+			<input type="radio" name="graph" value=1 autofocus>y = x^2
+			<input type="radio" name="graph" value=2>y = x^3
+			<input type="radio" name="graph" value=3>y = sin(x)
+			<input type="radio" name="graph" value=4>y = cos(x)
+		</form>
+		<form>
+			<select name="color" size=4>
+				<option name="colors" value="#000" selected>Black</option>
+				<option name="colors" value="#f00">Red</option>
+				<option name="colors" value="#0f0">Green</option>
+				<option name="colors" value="#00f">Blue</option>
+			</select>
+		</form>
+		<script src="script.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,13 @@
+<xsl:sort select = "YearOfBirth" />
+
+
+
+
+<td bgcolor = "green"><xsl:value-of select = "PassingScore"/></td>>
+</xsl:when>>
+<xsl:when test = "PassingScore &lt; 6">
+    <td bgcolor = "red"><xsl:value-of select = "PassingScore"/></td>>
+</xsl:when>>
+<xsl:otherwise>
+<td><xsl:value-of select = "PassingScore" /> </td>
+</xsl:otherwise>

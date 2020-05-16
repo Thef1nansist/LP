@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href = "xsl4F.xsl" type = "text/xsl" ?>
+<University>
+    
+    <INFORMATION>
+        <Surname>Савченко</Surname>
+        <Name>Владислав</Name>
+        <MiddleName>Юрьевич</MiddleName>
+        <PassingScore>7.0</PassingScore>
+        <YearOfBirth>31.05.2001</YearOfBirth>
+    </INFORMATION>
+
+    <INFORMATION>
+        <Surname>Квит</Surname>
+        <Name>Кирилл</Name>
+        <MiddleName>Александрович</MiddleName>
+        <PassingScore>6.8</PassingScore>
+        <YearOfBirth>16.06.2002</YearOfBirth>
+    </INFORMATION>
+
+    <INFORMATION>
+        <Surname>Пупкин</Surname>
+        <Name>Иван</Name>
+        <MiddleName>Никитович</MiddleName>
+        <PassingScore>4</PassingScore>
+        <YearOfBirth>20.01.2003</YearOfBirth>
+    </INFORMATION>
+    
+    <INFORMATION>
+        <Surname>Ермак</Surname>
+        <Name>Григорий</Name>
+        <MiddleName>Антонович</MiddleName>
+        <PassingScore>6</PassingScore>
+        <YearOfBirth>14.05.2002</YearOfBirth>
+    </INFORMATION>
+
+    <INFORMATION>
+        <Surname>Моргенштерн</Surname>
+        <Name>Алишер</Name>
+        <MiddleName>Тагирович</MiddleName>
+        <PassingScore>10</PassingScore>
+        <YearOfBirth>17.02.1998</YearOfBirth>
+    </INFORMATION>
+
+</University>

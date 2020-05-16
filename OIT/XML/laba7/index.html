@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg id="pic" width ="300px" height = "200px" style="border: 1px solid black ; margin-left:90px; margin-top: 90px;">
+    <circle cx= "50" cy="60" r = "40" stroke = "yellow" stroke-width ="3" fill ="yellow">
+        <animate attributeName="stroke-width" from="1" to="4" dur="1s"/>
+        <animate attributeName="cx" from="50" to="300" begin="1s" dur="5s"/>
+        <animate attributeName="r" from="40" to="20" dur="5s" begin="1s"/>
+        <animate attributeName="stroke" from="yellow" to="purple" dur="4s" begin="2s"/>
+        <animate attributeName="fill" from="red" to="purple" dur="4s" begin="2s"/>
+    </circle>
+    <animateTransform attributeName="transform" attributeName="XML" type="rotate" from="0,60 50" to="30,60,50" dur="5s" additivd ="sum" fill="freeze"/>
+    </svg>
+<br>
+<svg width ="300" height="350" style="border: 1px solid purple; margin-left:50px; margin-top: 90px" viewBox="0 0 150 175">
+    <defs>
+        <linearGradient id="Gradients">
+            <stop offset="10%" stop-color="#ed3f69" />
+            <stop offset="20%" stop-color="#f8ff32" />
+            <stop offset="60%" stop-color="#bb96e3" />
+            <stop offset="80%" stop-color="#44ff9a" />
+        </linearGradient>
+        <radialGradient id="Gradients2">
+            <stop offset="15%" stop-color="#ed3f69" />
+            <stop offset="70%" stop-color="#bb96e3" />
+        </radialGradient>
+    </defs>
+    <polyline points="60,30 90, 90 30, 90" stroke = "red" stroke-width="1.3" stroke-opacity ="1" stroke-dasharray ="5" stroke-dashoffset ="0" fill="url(#Gradients)">
+    <animateTransform attributeName="transform" attributeName="XML" type="scale" from="1 1" to="1.2 1.2" dur="5s"begin="mousedown"/>
+    <animate attributeName="stroke-opacity" from="1" to="0" dur="4s" begin="mousedown"/>
+    <animate attributeName="stroke-dashoffset" from="0" to="100" dur="5s" begin="mousedown"/>
+    <animate attributeName="fill" from="url(#Gradients)" to="purple" dur="1s" begin="mousedown"/>
+    </polyline>
+</svg> 
+</body>
+</html>

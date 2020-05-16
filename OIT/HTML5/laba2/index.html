@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <img id='imag' src='ris.jpg' style='display:none;  width:"200"; height:"300";' />
+    <defs>
+        <linearGradient id="Gradients">
+            <stop offset="10%" stop-color="#ed3f69" />
+            <stop offset="20%" stop-color="#f8ff32" />
+            <stop offset="60%" stop-color="#bb96e3" />
+            <stop offset="80%" stop-color="#44ff9a" />
+        </linearGradient>
+        <radialGradient id="Gradients2">
+            <stop offset="15%" stop-color="#ed3f69" />
+            <stop offset="70%" stop-color="#bb96e3" />
+        </radialGradient>
+    </defs>
+    <script type="application/javascript">
+        function drawgist() {
+            var canvas = document.getElementById("draw");
+            var x = canvas.getContext("2d");
+
+            x.strokeRect(150, 70, 500, 300);
+            x.beginPath();
+            x.moveTo(195, 350);
+            x.lineTo(600, 350);
+            x.moveTo(195, 350);
+            x.lineTo(195, 100);
+            x.stroke();
+            x.fillStyle = "green";
+            x.fillRect(197, 285, 80, 65)
+            x.font = '20px Verdana';
+            x.fillStyle = '#60016d'
+            x.fillText("Число заболевших COVID-19", 250, 100);
+            x.font = '13px Verdana';
+            x.fillStyle = '#9370DB';
+            x.fillText("0", 180, 360);
+            x.fillText("10к", 165, 330);
+            x.fillText("20к", 165, 310);
+            x.fillText("30к", 165, 290);
+            x.fillText("40к", 165, 270);
+            x.fillText("50к", 165, 250);
+            x.fillText("60к", 165, 230);
+            x.fillText("70к", 165, 210);
+            x.fillText("80к", 165, 190);
+            x.fillText("90к", 165, 170);
+            x.fillText("100к", 157, 150);
+            x.font = '12px Verdana';
+            x.fillStyle = '#FF69B4';
+            x.fillText("Беларусь", 205, 363);
+
+            var grad = x.createLinearGradient(120, 30, 550, 500);
+            grad.addColorStop(0, "black");
+            grad.addColorStop(0.25, "red");
+            grad.addColorStop(1, "black");
+            x.fillStyle = grad;
+            x.fillRect(300, 308, 80, 42)
+            x.font = '12px Verdana';
+            x.fillStyle = '#FF69B4';
+            x.fillText("Польша", 315, 363);
+            x.fillText("Иран", 430, 363);
+
+            x.fillText("100", 450, 700);
+            x.fillText("68", 290, 650);
+            x.fillText("20", 290, 565);
+            x.fillText("30", 320, 520);
+            x.fillText("100", 450, 510);
+            var img = document.getElementById('imag');
+            x.drawImage(imag, 150, 70, 104, 124, 400, 115, 87, 235);
+            // инициализация набора данных
+            var data = [100, 68, 20, 30, 100];
+
+            // рисуем фон
+            x.fillStyle = "white";
+            x.fillRect(500, 500, 200, 200);
+            var colors = ["orange", "green", "blue", "yellow", "teal"];
+
+            // вычисляем сумму всех данных
+            var total = 0;
+            for (var i = 0; i < data.length; i++) {
+                total += data[i];
+            }
+            var prevAngle = 0;
+            for (var i = 0; i < data.length; i++) {
+                // доля, представленная сегментом
+                var fraction = data[i] / total;
+                // вычисляем начальный угол
+                var angle = prevAngle + fraction * Math.PI * 2;
+
+                // рисуем сегмент
+                x.fillStyle = colors[i];
+
+                // создаём контур
+                x.beginPath();
+                x.moveTo(400, 600);
+                x.arc(400, 600, 100, prevAngle, angle, false);
+                x.lineTo(400, 600);
+
+                // заливаем его
+                x.fill();
+
+                // обводим его
+                x.strokeStyle = "black";
+                x.stroke();
+
+                // обновляем для следующей итерации цикла
+                prevAngle = angle;
+            }
+            x.fillStyle = "black";
+            x.font = "14pt sans-serif";
+            x.shadowOffsetX = 3;
+            x.shadowOffsetY = 3;
+            x.shadowBlur = 5;
+            x.shadowColor = 'black';
+            x.fillStyle = 'red';
+
+            var text = "ЧИСЛО ЗАРАЖЕНИЙ В СЕКУНДУ";
+            var metrics = x.measureText(text);
+            x.fillText(text, 400 - metrics.width / 2, 750);
+
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+
+</head>
+
+<body onload="drawgist()">
+
+    <canvas id='draw' width='1000' height='1000'></canvas>
+</body>
+
+</html>

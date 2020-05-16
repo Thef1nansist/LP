@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<Student>
+		<surname>Савченко</surname>
+		<name>Владислав</name>
+		<patronymic>Юрьевич</patronymic>
+		<ball>8</ball>
+		<year>2001</year>
+	</Student>
+	<Student>
+		<surname>Семёнов</surname>
+		<name>Николай</name>
+		<patronymic>Павлович</patronymic>
+		<ball>4</ball>
+		<year>2000</year>
+	</Student>
+	<Student>
+		<surname>Филипов</surname>
+		<name>Серафим</name>
+		<patronymic>Александрович</patronymic>
+		<ball>9</ball>
+		<year>2002</year>
+	</Student>
+</root>

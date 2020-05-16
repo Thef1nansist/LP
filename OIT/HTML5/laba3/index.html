@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <img id='imag' src='ris.jpg' style='display:none;  width:"200"; height:"300";' />
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-image: url("ep_naturalwhite.png");
+           
+        }
+        #first {
+            top: 10%;
+            position: absolute;
+            left: 20%;
+            margin-right: -40%;
+        }
+
+        #form {
+            position: relative;
+            margin-top: 10px;
+            float: right;
+        }
+        .header__top{
+           
+            background-color: #303030;
+            color: white;
+            display: flex;
+            max-width: 1170px;
+            padding: 0px 150px 0px 11px;
+        }
+        footer{
+           
+            background-color: #595959;
+          
+            margin-top: 720px;
+            height: 210px;
+        }
+       
+        .imag{
+            
+            margin-left: 650px;
+            width: 50px;
+            height: 50px;
+        }
+        section{
+            padding-bottom: 100px;
+        }
+        #wrap {
+  min-height: 100%;
+}
+.text{
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+    </style>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+
+</head>
+
+<body onload="drawgist()">
+    <div id="wrap">
+    <header class="header__top" style="text-align: center; padding-left: 600px; font-size: 20px;">
+Оставайтесь<br>
+Дома!
+<nav>
+    <a href="file:///C:/Users/Vlad/OIT/MyProject/html/index.html"><img src="I.jpg" width="100" height="100" class="imag" style="padding: 100 30 30 30; position: relative;"></a>
+</nav>
+    </header>
+   <section>
+    <defs>
+        <linearGradient id="Gradients">
+            <stop offset="10%" stop-color="#ed3f69" />
+            <stop offset="20%" stop-color="#f8ff32" />
+            <stop offset="60%" stop-color="#bb96e3" />
+            <stop offset="80%" stop-color="#44ff9a" />
+        </linearGradient>
+        <radialGradient id="Gradients2">
+            <stop offset="15%" stop-color="#ed3f69" />
+            <stop offset="70%" stop-color="#bb96e3" />
+        </radialGradient>
+    </defs>
+    <script type="application/javascript">
+        function drawgist() {
+            var canvas = document.getElementById("draw");
+            var x = canvas.getContext("2d");
+
+            x.strokeRect(150, 70, 500, 300);
+            x.beginPath();
+            x.moveTo(195, 350);
+            x.lineTo(600, 350);
+            x.moveTo(195, 350);
+            x.lineTo(195, 100);
+            x.stroke();
+            x.fillStyle = "green";
+            x.fillRect(197, 285, 80, 65)
+            x.font = '20px Verdana';
+            x.fillStyle = '#60016d'
+            x.fillText("Число заболевших COVID-19", 250, 100);
+            x.font = '13px Verdana';
+            x.fillStyle = '#9370DB';
+            x.fillText("0", 180, 360);
+            x.fillText("10к", 165, 330);
+            x.fillText("20к", 165, 310);
+            x.fillText("30к", 165, 290);
+            x.fillText("40к", 165, 270);
+            x.fillText("50к", 165, 250);
+            x.fillText("60к", 165, 230);
+            x.fillText("70к", 165, 210);
+            x.fillText("80к", 165, 190);
+            x.fillText("90к", 165, 170);
+            x.fillText("100к", 157, 150);
+            x.font = '12px Verdana';
+            x.fillStyle = '#FF69B4';
+            x.fillText("Беларусь", 205, 363);
+
+            var grad = x.createLinearGradient(120, 30, 550, 500);
+            grad.addColorStop(0, "black");
+            grad.addColorStop(0.25, "red");
+            grad.addColorStop(1, "black");
+            x.fillStyle = grad;
+            x.fillRect(300, 308, 80, 42)
+            x.font = '12px Verdana';
+            x.fillStyle = '#FF69B4';
+            x.fillText("Польша", 315, 363);
+            x.fillText("Иран", 430, 363);
+
+            x.fillText("100", 450, 700);
+            x.fillText("68", 290, 650);
+            x.fillText("20", 290, 565);
+            x.fillText("30", 320, 520);
+            x.fillText("100", 450, 510);
+            var img = document.getElementById('imag');
+            x.drawImage(imag, 150, 70, 104, 124, 400, 115, 87, 235);
+            // инициализация набора данных
+            var data = [100, 68, 20, 30, 100];
+
+            // рисуем фон
+         
+            var colors = ["orange", "green", "blue", "yellow", "teal"];
+
+            // вычисляем сумму всех данных
+            var total = 0;
+            for (var i = 0; i < data.length; i++) {
+                total += data[i];
+            }
+            var prevAngle = 0;
+            for (var i = 0; i < data.length; i++) {
+                // доля, представленная сегментом
+                var fraction = data[i] / total;
+                // вычисляем начальный угол
+                var angle = prevAngle + fraction * Math.PI * 2;
+
+                // рисуем сегмент
+                x.fillStyle = colors[i];
+
+                // создаём контур
+                x.beginPath();
+                x.moveTo(400, 600);
+                x.arc(400, 600, 100, prevAngle, angle, false);
+                x.lineTo(400, 600);
+
+                // заливаем его
+                x.fill();
+
+                // обводим его
+                x.strokeStyle = "black";
+                x.stroke();
+
+                // обновляем для следующей итерации цикла
+                prevAngle = angle;
+            }
+            x.fillStyle = "black";
+            x.font = "14pt sans-serif";
+            x.shadowOffsetX = 3;
+            x.shadowOffsetY = 3;
+            x.shadowBlur = 5;
+            x.shadowColor = 'black';
+            x.fillStyle = 'red';
+
+            var text = "ЧИСЛО ЗАРАЖЕНИЙ В СЕКУНДУ";
+            var metrics = x.measureText(text);
+            x.fillText(text, 400 - metrics.width / 2, 750);
+
+        }
+    </script>
+    <div id="first">
+        <canvas id='draw' width='1000' height='1000'></canvas>
+    </div>
+    <div id="form">
+        <div class="profile"><img src="https://html5book.ru/wp-content/uploads/2016/10/profile-image.png">
+            <h1>Регистрация</h1>
+        </div>
+        <form method="post">
+            <div>
+                <label for="name">Имя</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="radio">
+                <span>Пол</span>
+                <label>
+                    <input type="radio" name="sex" value="мужской">мужской
+                    <div class="radio-control male"></div>
+                </label>
+                <label>
+                    <input type="radio" name="sex" value="женский">женский
+                    <div class="radio-control female"></div>
+                </label>
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" required>
+            </div>
+            <div>
+                <label for="country">Страна</label>
+                <select name="country">
+                    <option>Выберите страну проживания</option>
+                    <option value="Россия">Россия</option>
+                    <option value="Украина">Украина</option>
+                    <option value="Беларусь">Беларусь</option>
+                </select>
+                <div class="select-arrow"></div>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</section>
+
+</div>
+    <footer class="text">
+        <p style="margin-left: 42%;">Личная информация</p>
+        <p style="margin-left: 38%;">Савченко В.Ю.</p>
+        <p style="margin-left: 46%;">1 курс</p>
+        <p style="margin-left: 36%;">5 группа</p>
+        <p href="tel:375296288638" style="margin-left: 48%;">+375296288638</p>
+        <p style="margin-left: 34%;">vladsavchenko994@gmail.com</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="cssFor1.css"?>
+<UNIVERSITY>
+
+    <SPECIALIZATION id = "first">
+                <NAME id="1">БГУИР</NAME>
+                <SET id="2">300 человек </SET>
+                <SITY id="3">Минск</SITY>
+                <EXAM id="4">369 баллов</EXAM>
+    </SPECIALIZATION>
+
+    <SPECIALIZATION id = "second">
+                <NAME id="1">БГТУ</NAME>
+                <SET id="2">200 человек </SET>
+                <SITY id="3">Минск</SITY>
+                <EXAM id="4">330 баллов</EXAM>
+    </SPECIALIZATION>
+
+    <SPECIALIZATION id = "third" >
+                <NAME id="1">БНТУ</NAME>
+                <SET id="2">320 человек  </SET>
+                <SITY id="3">Минск</SITY>
+                <EXAM id="4">334 балла</EXAM>
+    </SPECIALIZATION>
+
+    <SPECIALIZATION id = "four" >
+                <NAME id="1">МИУ</NAME>
+                <SET id="2">180 человек  </SET>
+                <SITY id="3">Минск</SITY>
+                <EXAM id="4">310 баллов</EXAM>
+    </SPECIALIZATION>
+
+    <SPECIALIZATION id = "fifth">
+                <NAME id="1">ВГУ имени П. М. Машерова</NAME>
+                <SET id="2">140 человек  </SET>
+                <SITY id="3">Витебск</SITY>
+                <EXAM id="4">311 баллов</EXAM>
+    </SPECIALIZATION>
+
+    <SPECIALIZATION id = "sixth">
+                <NAME id="1">БрГТУ</NAME>
+                <SET id="2">120 человек  </SET>
+                <SITY id="3">Брест</SITY>
+                <EXAM id="4">315 баллов</EXAM>
+    </SPECIALIZATION>
+
+     <SPECIALIZATION id = "seventh">
+                <NAME id="1">ПГУ</NAME>
+                <SET id="2">100 человек </SET>
+                <SITY id="3">Полоцк</SITY>
+                <EXAM id="4">312 баллов</EXAM>
+    </SPECIALIZATION>
+
+</UNIVERSITY>

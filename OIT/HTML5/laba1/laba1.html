@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <style>
+        .text {
+         text-align:  center;
+        }
+        .mark{
+           
+            text-shadow: 1px yellow;
+        }
+       </style>
+</head>
+<body>
+    <h1 class="text" >Я,<mark style="text-decoration:underline red">Савченко Владислав Юрьевич</mark>, изучаю HTML5</h1>
+    <video src="lab.mp4" width="300" height="200" controls="controls"></video>
+    <audio src="tre.mp3" controls="controls"> </audio>
+    <script>
+        function getCoordinates() {
+        navigator.geolocation.getCurrentPosition(showCoordinates);
+        }
+        function showCoordinates(position) {
+        document.write("Широта:" + position.coords.latitude + "<br/>");
+        document.write("Долгота:" + position.coords.longitude);
+        }
+        </script>
+        <body>
+        <p>Для считывания координат нажмите на кнопку</p>
+        <input type="button" value=" Координаты" onclick =
+        "getCoordinates()">
+</body>
+</html>

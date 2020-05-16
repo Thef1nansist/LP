@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="laba2.css"?>
+<!DOCTYPE  UNIVERSITY SYSTEM "Note.dtd">
+<UNIVERSITY >
+
+    <SPECIALIZATION >
+                <NAME >БГУИР</NAME>
+                <SET >300 человек </SET>
+                <SITY >Минск</SITY>
+                <EXAM >369 баллов</EXAM>
+    </SPECIALIZATION>
+
+    <SPECIALIZATION >
+                <NAME >БГТУ</NAME>
+                <SET >200 человек </SET>
+                <SITY >Минск</SITY>
+                <EXAM >330 баллов</EXAM>
+    </SPECIALIZATION>
+
+    <SPECIALIZATION  >
+                <NAME >БНТУ</NAME>
+                <SET >320 человек  </SET>
+                <SITY >Минск</SITY>
+                <EXAM >334 балла</EXAM>
+    </SPECIALIZATION>
+
+    <SPECIALIZATION >
+                <NAME >МИУ</NAME>
+                <SET >180 человек  </SET>
+                <SITY >Минск</SITY>
+                <EXAM >310 баллов</EXAM>
+    </SPECIALIZATION>
+
+    <SPECIALIZATION >
+                <NAME >ВГУ имени П. М. Машерова</NAME>
+                <SET >140 человек  </SET>
+                <SITY >Витебск</SITY>
+                <EXAM >311 баллов</EXAM>
+    </SPECIALIZATION>
+
+    <SPECIALIZATION>
+                <NAME >БрГТУ</NAME>
+                <SET>120 человек  </SET>
+                <SITY >Брест</SITY>
+                <EXAM >315 баллов</EXAM>
+    </SPECIALIZATION>
+
+     <SPECIALIZATION>
+                <NAME >ПГУ</NAME>
+                <SET >100 человек </SET>
+                <SITY >Полоцк</SITY>
+                <EXAM >312 баллов</EXAM>
+    </SPECIALIZATION>
+
+</UNIVERSITY>

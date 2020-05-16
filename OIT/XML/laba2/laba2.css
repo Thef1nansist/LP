@@ -1,0 +1,76 @@
+SPECIALIZATION
+{ 
+    display:block;
+    text-align:center;
+    margin:10px 20px 10px 20px;
+    margin-top:5pt;
+    border-style:double;
+    border-color:#8C0088;
+    font-size:15pt;
+    margin-right:1000px ;
+}
+
+NAME
+{ 
+    display: block;
+    border: double 1 px;
+    border-color:#8C0088;
+    font-style:italic;
+    text-align:center;
+}
+
+EXAM
+{ 
+    display:block;
+    border-top:double;
+    text-align:center;
+    border-color:#8C0088;
+   
+}
+
+SET
+{ 
+    display:block;
+    text-align:center;
+    border-top:double;
+    border-color:#8C0088;
+    
+}
+
+SITY
+{ 
+    display:block;
+    text-align:center;
+    border-top:double;
+    border-color:#8C0088;
+ 
+}
+
+#first
+{
+    background-color: aquamarine;
+}
+#second
+{
+    background-color: aquamarine;
+}
+#third
+{
+    background-color: aquamarine;
+}
+#four
+{
+    background-color: aquamarine;
+}
+#fifth
+{
+    background-color: aquamarine;
+}
+#sixth
+{
+    background-color: aquamarine;
+}
+#seventh
+{
+    background-color: aquamarine;
+}

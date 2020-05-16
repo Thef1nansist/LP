@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+<h2>Students</h2>
+<p id="one"></p>
+
+<p id="two"></p>
+
+<p id="three"></p>
+
+<script>
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        Function__Create1(this);
+    }
+};
+xhttp.open("GET", "3.xml", true);
+xhttp.send();
+
+function Function__Create1(xml) {
+
+    var xmlDoc = xml.responseXML;
+    document.getElementById("one").innerHTML = 
+    "<b>" + "Фамилия:" + "</b>" +
+    xmlDoc.getElementsByTagName("surname")[0].childNodes[0].nodeValue
+    + "<br/>" + "<b>" + "Имя:" + "</b>" + 
+    xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue
+    + "<br/>" + "<b>" + "Балл:" + "</b>" + 
+    xmlDoc.getElementsByTagName("ball")[0].childNodes[0].nodeValue
+    + "<br/>" + "<b>" + "Год:" + "</b>" + 
+    xmlDoc.getElementsByTagName("year")[0].childNodes[0].nodeValue
+    + "<br/>" + "<br/>";
+}
+
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        Function__Create2(this);
+    }
+};
+xhttp.open("GET", "3.xml", true);   
+xhttp.send();
+
+function Function__Create2(xml) {
+
+    var xmlDoc = xml.responseXML;
+    document.getElementById("two").innerHTML = 
+    "<b>" + "Фамилия:" + "</b>" +
+    xmlDoc.getElementsByTagName("surname")[1].childNodes[0].nodeValue
+    + "<br/>" + "<b>" + "Имя:" + "</b>" + 
+    xmlDoc.getElementsByTagName("name")[1].childNodes[0].nodeValue
+    + "<br/>" + "<b>" + "Балл:" + "</b>" + 
+    xmlDoc.getElementsByTagName("ball")[1].childNodes[0].nodeValue
+    + "<br/>" + "<b>" + "Год:" + "</b>" + 
+    xmlDoc.getElementsByTagName("year")[1].childNodes[0].nodeValue
+    + "<br/>" + "<br/>";
+}
+
+//из 2 файла
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        Function__Create3(this);
+    }
+};
+xhttp.open("GET", "4.xml", true);   
+xhttp.send();
+
+function Function__Create3(xml) {
+
+    var xmlDoc = xml.responseXML;
+    document.getElementById("three").innerHTML = 
+    "<b>" + "Фамилия:" + "</b>" +
+    xmlDoc.getElementsByTagName("surname")[2].childNodes[0].nodeValue
+    + "<br/>" + "<b>" + "Имя:" + "</b>" + 
+    xmlDoc.getElementsByTagName("name")[2].childNodes[0].nodeValue
+    + "<br/>" + "<b>" + "Балл:" + "</b>" + 
+    xmlDoc.getElementsByTagName("ball")[2].childNodes[0].nodeValue
+    + "<br/>" + "<b>" + "Год:" + "</b>" + 
+    xmlDoc.getElementsByTagName("year")[2].childNodes[0].nodeValue
+    + "<br/>" + "<br/>";
+}
+</script>
+
+</body>
+</html>
